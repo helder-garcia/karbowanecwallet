@@ -49,7 +49,7 @@ const uint64_t MINIMUM_FEE                                   = UINT64_C(1000);
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(1000);
 
 const uint64_t DIFFICULTY_TARGET                             = 120; // seconds
-const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 17 // DIFFICULTY_TARGET;
+const uint64_t EXPECTED_NUMBER_OF_BLOCKS_PER_DAY             = 17; // DIFFICULTY_TARGET;
 const size_t   DIFFICULTY_WINDOW                             = EXPECTED_NUMBER_OF_BLOCKS_PER_DAY; // blocks
 const size_t   DIFFICULTY_WINDOW_V2                          = 17; // blocks
 const size_t   DIFFICULTY_CUT                                = 0;  // timestamps to cut after sorting
