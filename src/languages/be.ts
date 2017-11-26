@@ -851,8 +851,8 @@ Please wait...</source>
 <context>
     <name>PaymentServer</name>
     <message>
-        <source>Cannot start karbowanec: click-to-pay handler</source>
-        <translation>Немагчыма запусціць click-to-pay апрацоўшчык karbowanec:</translation>
+        <source>Cannot start niobio: click-to-pay handler</source>
+        <translation>Немагчыма запусціць click-to-pay апрацоўшчык niobio:</translation>
     </message>
 </context>
 <context>
@@ -1374,7 +1374,7 @@ Do you want to go to download page?</source>
         <translation>Запуск прыкладанняў у фонавым рэжыме</translation>
     </message>
     <message>
-        <source>Karbowanec wallet</source>
+        <source>Niobio wallet</source>
         <translation>Гаманец карбованцаў</translation>
     </message>
     <message>
@@ -1530,8 +1530,8 @@ Are you sure?</source>
         <translation type="vanished">Карбованець в. %2 (%1)</translation>
     </message>
     <message>
-        <source>More info can be found at www.karbowanec.com in Documentation section</source>
-        <translation>Больш інфармацыі на сайце www.karbowanec.com у раздзеле Дакументацыя.</translation>
+        <source>More info can be found at niobio.money in Documentation section</source>
+        <translation>Больш інфармацыі на сайце niobio.money у раздзеле Дакументацыя.</translation>
     </message>
     <message>
         <source>Connection settings changed</source>
@@ -1562,7 +1562,7 @@ Are you sure?</source>
         </translation>
     </message>
     <message>
-        <source>Karbo Wallet %1</source>
+        <source>Niobio Wallet %1</source>
         <translation>Карбованець в. %1</translation>
     </message>
     <message numerus="yes">
@@ -1586,7 +1586,7 @@ Are you sure?</source>
         <translation type="vanished">Сума: %1, хэш: %2</translation>
     </message>
     <message>
-        <source>Karbo Wallet</source>
+        <source>Niobio Wallet</source>
         <translation type="vanished">Карбованець</translation>
     </message>
     <message>
@@ -1750,8 +1750,8 @@ Are you sure?</source>
         <translation>Няправільны ідэнтыфікатар плацяжу</translation>
     </message>
     <message>
-        <source>Payment request should start with karbowanec:</source>
-        <translation>Запыт плацяжу мусіць пачынацца з karbowanec:</translation>
+        <source>Payment request should start with niobio:</source>
+        <translation>Запыт плацяжу мусіць пачынацца з niobio:</translation>
     </message>
     <message>
         <source>Insufficient balance</source>
