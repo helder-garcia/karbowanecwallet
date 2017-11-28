@@ -81,14 +81,14 @@ void Updater::replyFinished (QNetworkReply *reply)
     {
         Version ourVersion = Settings::instance().getVersion().split("-")[0].toStdString();
 
-		QString result = reply->readAll().data();      
+		QString result = reply->readAll().data();
 
         Version remoteVersion = result.toStdString();
 
          if (ourVersion < remoteVersion) {
 
              if (QMessageBox::warning(nullptr, QObject::tr("New version available"), QObject::tr("There is update available.\nDo you want to go to download page?"), QMessageBox::Ok, QMessageBox::Cancel) == QMessageBox::Ok) {
-                 QString link = "http://karbowanec.com/#downloads";
+                 QString link = "http://niobio.money/#updates";
                  QDesktopServices::openUrl(QUrl(link));
              }
 

@@ -89,7 +89,7 @@ void Settings::load() {
   }
 
   QStringList defaultPoolList;
-  defaultPoolList << "pool.karbowanec.com:3333" << "pool2.democats.org:45570" << "NBR.sberex.com:3333" << "mine.NBR.mypool.online:32350";
+  defaultPoolList << "67.207.84.193:3333";
   if (!m_settings.contains(OPTION_MINING_POOLS)) {
     setMiningPoolList(QStringList() << defaultPoolList);
   } else {
@@ -103,7 +103,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "node.karbowanec.com:32348" << "node.NBR.mypool.online:32348"; // "pool2.democats.org:7671"
+  defaultNodesList << "45.55.141.227:8313" << "138.197.222.188:8313" << "67.205.149.179:8313" << "67.207.92.64:8313";
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {

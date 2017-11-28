@@ -10,7 +10,7 @@
 #include <QNetworkReply>
 #include <QUrl>
 
-const static QString NBRCOIN_UPDATE_URL = "http://karbowanec.com/download/update.txt";
+const static QString NBRCOIN_UPDATE_URL = "http://niobio.money/download/update.txt";
 
 class Updater : public QObject
 {
@@ -21,7 +21,7 @@ public:
     void checkForUpdate();
 
 signals:
-    
+
 public slots:
     void replyFinished (QNetworkReply *reply);
 
