@@ -61,7 +61,7 @@ void Settings::load() {
     }
 
     if (!m_settings.contains(OPTION_CONNECTION)) {
-         m_connectionMode = "auto";
+         m_connectionMode = "remote";
     }
 
     if (!m_settings.contains(OPTION_DAEMON_PORT)) {
@@ -233,7 +233,7 @@ QString Settings::getConnection() const {
         connection = m_settings.value(OPTION_CONNECTION).toString();
     }
     else {
-    connection = "auto"; // default
+    connection = "remote"; // default
     }
     return connection;
 }
