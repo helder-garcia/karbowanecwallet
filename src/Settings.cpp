@@ -103,7 +103,7 @@ void Settings::load() {
   }
 
   QStringList defaultNodesList;
-  defaultNodesList << "138.197.222.188:8314";
+  defaultNodesList << "138.197.222.188:8314" << "45.55.172.1:8314" << "45.55.141.227:8314";
   if (!m_settings.contains(OPTION_RPCNODES)) {
     setRpcNodesList(QStringList() << defaultNodesList);
   } else {
