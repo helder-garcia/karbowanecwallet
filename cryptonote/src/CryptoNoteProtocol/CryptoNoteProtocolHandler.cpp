@@ -481,7 +481,7 @@ int CryptoNoteProtocolHandler::handle_request_chain(int command, NOTIFY_REQUEST_
   }
   logger(Logging::INFO) << context << "block_ids.back: " << arg.block_ids.back();
   logger(Logging::INFO) << context << "getBlockIdByHeight(0): " << m_core.getBlockIdByHeight(0);
-  logger(Logging::INFO) << context << "getBlockHashByIndex(0): " << m_core.getBlockHashByIndex(0);
+  logger(Logging::INFO) << context << "getBlockIdByHeight(0): " << m_core.getBlockIdByHeight(1);
 
   if (arg.block_ids.back() != m_core.getBlockIdByHeight(0)) {
     logger(Logging::ERROR) << context << "Failed to handle NOTIFY_REQUEST_CHAIN. block_ids doesn't end with genesis block ID";
