@@ -76,8 +76,8 @@ const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff00019dd0
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
 const uint8_t  BLOCK_MAJOR_VERSION_1                         =  2;
-const uint8_t  BLOCK_MAJOR_VERSION_2                         =  2;
-const uint8_t  BLOCK_MAJOR_VERSION_3                         =  3;
+const uint8_t  BLOCK_MAJOR_VERSION_2                         =  3;
+const uint8_t  BLOCK_MAJOR_VERSION_3                         =  4;
 const uint8_t  BLOCK_MINOR_VERSION_0                         =  0;
 const uint8_t  BLOCK_MINOR_VERSION_1                         =  1;
 
