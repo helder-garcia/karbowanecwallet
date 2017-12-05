@@ -75,7 +75,7 @@ const char     CRYPTONOTE_NAME[]                             = "niobio";
 const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff00019dd085bedd03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd0880712101ad57d730d6e2419095871c3b5882daa96e0d30af050f7c97bfbe2433593224ee";
 
 const uint8_t  CURRENT_TRANSACTION_VERSION                   =  1;
-const uint8_t  BLOCK_MAJOR_VERSION_1                         =  1;
+const uint8_t  BLOCK_MAJOR_VERSION_1                         =  2;
 const uint8_t  BLOCK_MAJOR_VERSION_2                         =  2;
 const uint8_t  BLOCK_MAJOR_VERSION_3                         =  3;
 const uint8_t  BLOCK_MINOR_VERSION_0                         =  0;
