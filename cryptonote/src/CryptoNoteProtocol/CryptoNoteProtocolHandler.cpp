@@ -473,7 +473,7 @@ bool CryptoNoteProtocolHandler::on_idle() {
 
 int CryptoNoteProtocolHandler::handle_request_chain(int command, NOTIFY_REQUEST_CHAIN::request& arg, CryptoNoteConnectionContext& context) {
   logger(Logging::TRACE) << context << "NOTIFY_REQUEST_CHAIN: m_block_ids.size()=" << arg.block_ids.size();
-
+  logger(Logging::INFO) << context << "block_ids: " << arg.block_ids;
   if (arg.block_ids.empty()) {
     logger(Logging::ERROR, Logging::BRIGHT_RED) << context << "Failed to handle NOTIFY_REQUEST_CHAIN. block_ids is empty";
     context.m_state = CryptoNoteConnectionContext::state_shutdown;
@@ -481,7 +481,6 @@ int CryptoNoteProtocolHandler::handle_request_chain(int command, NOTIFY_REQUEST_
   }
   logger(Logging::INFO) << context << "block_ids.back: " << arg.block_ids.back();
   logger(Logging::INFO) << context << "getBlockIdByHeight(0): " << m_core.getBlockIdByHeight(0);
-  logger(Logging::INFO) << context << "getBlockIdByHeight(0): " << m_core.getBlockIdByHeight(1);
 
   if (arg.block_ids.back() != m_core.getBlockIdByHeight(0)) {
     logger(Logging::ERROR) << context << "Failed to handle NOTIFY_REQUEST_CHAIN. block_ids doesn't end with genesis block ID";
