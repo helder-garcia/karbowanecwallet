@@ -473,8 +473,6 @@ bool CryptoNoteProtocolHandler::on_idle() {
 
 int CryptoNoteProtocolHandler::handle_request_chain(int command, NOTIFY_REQUEST_CHAIN::request& arg, CryptoNoteConnectionContext& context) {
   logger(Logging::TRACE) << context << "NOTIFY_REQUEST_CHAIN: m_block_ids.size()=" << arg.block_ids.size();
-  for( arg.block_ids::size_type i=0; i<arg.block_ids.size(); ++i)
-  logger(Logging::INFO) << context << "block_ids: " << arg.block_ids[i];
 
   if (arg.block_ids.empty()) {
     logger(Logging::ERROR, Logging::BRIGHT_RED) << context << "Failed to handle NOTIFY_REQUEST_CHAIN. block_ids is empty";
